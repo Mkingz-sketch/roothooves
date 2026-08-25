@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <section className="section section-alt"><div className="shell max-w-2xl text-center"><p className="eyebrow">404</p><h1 className="display mt-3 text-5xl font-bold text-[#173d2e]">This path hasn&apos;t taken root.</h1><p className="mt-5 leading-7 text-[#526258]">The page you are looking for is not available.</p><Link className="button mt-7" href="/">Return home</Link></div></section> }

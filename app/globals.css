@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root { --forest: #173d2e; --leaf: #326043; --cream: #f7f2e8; --paper: #fffdf8; --earth: #895b36; --gold: #c89435; --ink: #1f2b23; --muted: #5c685f; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: Arial, Helvetica, sans-serif; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.display { font-family: Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+.shell { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+.eyebrow { color: var(--leaf); font-size: .73rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.button { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--forest); background: var(--forest); color: white; padding: .85rem 1.2rem; font-size: .9rem; font-weight: 700; transition: .2s ease; }
+.button:hover { background: var(--leaf); transform: translateY(-1px); }
+.button-outline { background: transparent; color: var(--forest); }
+.button-outline:hover { background: var(--forest); color: white; }
+.section { padding: 5.5rem 0; }
+.section-alt { background: var(--cream); }
+.card { border: 1px solid #dfded5; background: white; padding: 1.5rem; }
+.texture { background-color: var(--forest); background-image: radial-gradient(circle at 13% 14%, rgba(200,148,53,.36) 0 2px, transparent 3px), radial-gradient(circle at 78% 78%, rgba(255,255,255,.12) 0 1px, transparent 2px); }
+.hero-art { min-height: 500px; position: relative; overflow: hidden; background: linear-gradient(135deg, #254e37, #112d22); }
+.hero-art:before { content: ''; position: absolute; width: 90%; height: 90%; left: 8%; bottom: -34%; border-radius: 50% 50% 0 0; background: repeating-radial-gradient(ellipse at center, #d2a853 0 3px, #ac713c 4px 19px, #5c7b3c 20px 40px); transform: rotate(-8deg); opacity: .95; }
+.hero-art:after { content: 'ROOTS\A& HOOVES'; white-space: pre; position: absolute; top: 11%; right: 9%; color: #f9edcf; font: bold clamp(2rem, 5vw, 4.5rem)/.9 Georgia, serif; letter-spacing: -.08em; text-align: right; }
+.nav-link { font-size: .84rem; font-weight: 700; color: #44544a; }
+.nav-link:hover { color: var(--leaf); }
+.field { width: 100%; margin-top: .4rem; border: 1px solid #c9ccc4; background: white; padding: .78rem .85rem; color: var(--ink); }
+.field:focus { border-color: var(--leaf); outline: 2px solid rgba(50,96,67,.16); }
+@media (max-width: 720px) { .shell { width: min(100% - 32px, 1160px); } .section { padding: 4rem 0; } .hero-art { min-height: 330px; } }

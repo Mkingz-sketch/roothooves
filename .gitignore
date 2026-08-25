@@ -1,0 +1,12 @@
+node_modules
+.next
+.pnp.*
+.yarn/
+!.yarn/releases
+!.yarn/plugins
+!.yarn/patches
+!.yarn/sdks
+!.yarn/versions
+next-env.d.ts
+.env*
+!.env.example
